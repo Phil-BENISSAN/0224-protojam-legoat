@@ -1,5 +1,4 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
@@ -13,39 +12,41 @@ import SignUp from "./Pages/SignUp.jsx";
 import NotFoundPage from "./Pages/NotFoundPage.jsx";
 
 const router = createBrowserRouter([
-  {
-    element: <App />,
-    children: [
-      {
-        path: "/",
-        element: <HomePage />,
-      },
-      {
-        path: "/news-randos",
-        element: <NewsRandos />,
-      },
-      {
-        path: "/news-randos/:id",
-        element: <DetailsRandos />,
-      },
-      {
-        path: "/activities",
-        element: <Activites />,
-      },
-      {
-        path: "/activities/:id",
-        element: <DetailsActivities />,
-      },
-      {
-        path: "/signin",
-        element: <SignIn />,
-      },
-      {
-        path: "/signup",
-        element: <SignUp />,
-      },
-    ],
-  },
+
+	{
+		element: <App />,
+		errorElement: <NotFoundPage />,
+		children: [
+			{
+				path: "/",
+				element: <HomePage />,
+			},
+			{
+				path: "/news-randos",
+				element: <NewsRandos />,
+			},
+			{
+				path: "/news-randos/:id",
+				element: <DetailsRandos />,
+			},
+			{
+				path: "/activities",
+				element: <Activites />,
+			},
+			{
+				path: "/activities/:id",
+				element: <DetailsActivities />,
+			},
+			{
+				path: "/signin",
+				element: <SignIn />,
+			},
+			{
+				path: "/signup",
+				element: <SignUp />,
+			},
+		],
+	},
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

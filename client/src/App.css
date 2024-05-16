@@ -2,16 +2,20 @@
 
 :root {
   --primaryColor: #01762a;
-  --secondaryColor: #07d5b7;
-  --whiteColor: #dfdfdf;
-  --blackColor: #121212;
-
+  --secondaryColor: #a30702;
+  --whiteColor: #e9e9e9;
+  --blackColor: #1c1c1c;
   --font-title: "Quicksand", Verdana, sans-serif;
   --font-content: "Poppins", Verdana, sans-serif;
 }
 
+body {
+  background-color: var(--whiteColor);
+  font-family: poppins;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
