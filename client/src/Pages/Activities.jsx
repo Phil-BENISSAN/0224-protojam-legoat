@@ -23,9 +23,7 @@ const activityTurtle = "Img/activity-turtle.jpg";
 function Activites() {
   return (
     <>
-      <h1 className="title-activities">
-        Cliquez sur l&apos;activité qui vous intéresse pour y accéder :
-      </h1>
+      <h1 className="title-activities">Quelle activité vous intéresse ?</h1>
       <section className="swiper-container">
         <Swiper
           spaceBetween={30}
@@ -41,24 +39,24 @@ function Activites() {
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
-			<SwiperSlide>
-				<article className="slide-content">
-					<img src={activityGoat} alt="" />
-					<p>Course de chèvre</p>
-				</article>
-			</SwiperSlide>
-			<SwiperSlide>
-				<article className="slide-content">
-					<img src={activityNeighbor} alt="" />
-					<p>Adopte un randonneur</p>
-				</article>
-			</SwiperSlide>
-			<SwiperSlide>
-				<article className="slide-content">
-					<img src={activityTurtle} alt="" />
-					<p>Natation avec des tortues</p>
-				</article>
-			</SwiperSlide>
+          <SwiperSlide>
+            <article className="slide-content">
+              <img src={activityGoat} alt="" />
+              <p>Course de chèvre</p>
+            </article>
+          </SwiperSlide>
+          <SwiperSlide>
+            <article className="slide-content">
+              <img src={activityNeighbor} alt="" />
+              <p>Adopte un randonneur</p>
+            </article>
+          </SwiperSlide>
+          <SwiperSlide>
+            <article className="slide-content">
+              <img src={activityTurtle} alt="" />
+              <p>Natation avec des tortues</p>
+            </article>
+          </SwiperSlide>
           <SwiperSlide>
             <article className="slide-content">
               <img src={activityAsmr} alt="" />
