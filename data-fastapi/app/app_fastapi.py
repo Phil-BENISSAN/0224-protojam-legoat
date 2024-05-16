@@ -5,7 +5,6 @@ from fastapi import FastAPI
 df_rando = pd.read_csv('rando.csv', sep=',')
 
 
-
 app = FastAPI(docs_url="/documentation")
 
 
@@ -14,6 +13,7 @@ def all() -> dict:
     """
     Affiche toutes les données
     """
+
     all = {}
     for index in range(0,len(df_rando)):
         
