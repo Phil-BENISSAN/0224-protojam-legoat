@@ -11,3 +11,14 @@
   margin-bottom: 0.5rem;
   margin-right: 1rem;
 }
+
+.nameEnt {
+  font-size: 1.1rem;
+  margin-top: 0.8rem;
+  color: white;
+}
+
+.containerLogo {
+  display: flex;
+  gap: 0.5rem;
+}
