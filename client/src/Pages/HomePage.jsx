@@ -1,9 +1,10 @@
-function HomePage() {
-	return (
-		<>
-			<p>Home Page</p>
-		</>
-	);
-}
+import LastRando from "../Components/LastRando";
 
+function HomePage() {
+    return (
+        <>
+        <LastRando/>
+        </>
+    )
+}
 export default HomePage;
