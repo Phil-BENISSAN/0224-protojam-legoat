@@ -10,10 +10,12 @@ import DetailsRandos from "./Pages/Details.jsx";
 import DetailsActivities from "./Pages/DetailsActivities.jsx";
 import SignIn from "./Pages/SignIn.jsx";
 import SignUp from "./Pages/SignUp.jsx";
+import NotFoundPage from "./Pages/NotFoundPage.jsx";
 
 const router = createBrowserRouter([
 	{
 		element: <App />,
+		errorElement: <NotFoundPage />,
 		children: [
 			{
 				path: "/",
