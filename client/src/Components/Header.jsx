@@ -7,7 +7,7 @@ function Header() {
 			<Link to="/">
 				<img className="logo" src="/Img/logo_RandoZen.svg" alt="" />
 			</Link>
-			<Link to="/signin">
+			<Link to="/profil">
 				<img className="profilPicture" src="/Img/avatar.png" alt="" />
 			</Link>
 		</>

@@ -10,9 +10,9 @@ import DetailsActivities from "./Pages/DetailsActivities.jsx";
 import SignIn from "./Pages/SignIn.jsx";
 import SignUp from "./Pages/SignUp.jsx";
 import NotFoundPage from "./Pages/NotFoundPage.jsx";
+import Profil from "./Pages/Profil.jsx";
 
 const router = createBrowserRouter([
-
 	{
 		element: <App />,
 		errorElement: <NotFoundPage />,
@@ -44,6 +44,10 @@ const router = createBrowserRouter([
 			{
 				path: "/signup",
 				element: <SignUp />,
+			},
+			{
+				path: "/profil",
+				element: <Profil />,
 			},
 		],
 	},
