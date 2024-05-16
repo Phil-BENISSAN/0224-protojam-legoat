@@ -2,13 +2,14 @@ import uvicorn
 import pandas as pd
 from fastapi import FastAPI
 
-df_rando = pd.read_csv('app/rando.csv', sep=',')
+
 
 
 app = FastAPI(docs_url="/documentation")
 
+df_rando = pd.read_csv('app/rando.csv', sep=',')
 
-@app.get('/api')
+@app.get('/')
 def all() -> dict:
     """
     Affiche toutes les données
@@ -26,15 +27,15 @@ def all() -> dict:
 
     return all
 
-@app.get('/api/select={columns}')
+@app.get('/select={columns}')
 def select(columns:str) -> dict:
     """
     Affiche la liste des données pour toutes les randonnées
     pour appeler plusieurs données elles doivent être séparées par %
 
     Exemples:
-        /api/uuid    appelera toutes les uuid
-        /api/uuid%type_itinéraire  appelera les uuid et les types d'itinéraires
+        /select=uuid    appelera toutes les uuid
+        /select=uuid%type_itinéraire  appelera les uuid et les types d'itinéraires
     """
     all = {}
     for index in range(0,len(df_rando)):
@@ -55,7 +56,7 @@ def fonction(columns:str, column2:str, condition:str) -> dict:
     """
     Affiche une donnée selon une condition sur une autre donnée
     Exemples:
-    /api/select=uuid/where=type_itinéraire==Sentier 
+    /select=uuid/where=type_itinéraire==Sentier 
         renvoie toutes les uuid des itinéraires dont l'itinéraire est un sentier
     """
     all = {}
@@ -76,3 +77,4 @@ def fonction(columns:str, column2:str, condition:str) -> dict:
 
 if __name__ == '__main__':
     uvicorn.run(app, port=8000, host='0.0.0.0')
+
