@@ -6,6 +6,7 @@
   top: 1rem;
   left: 1rem;
 }
+
 .card {
   width: 17rem;
   height: 25rem;
@@ -23,7 +24,7 @@
 .blob {
   position: absolute;
   top: -4rem;
-  left: -5rem;
+  left: -4rem;
   z-index: -1;
 }
 
@@ -31,7 +32,7 @@
   position: absolute;
   z-index: -1;
   top: 13rem;
-  right: -5rem;
+  right: -1rem;
 }
 
 .card-inner {
@@ -41,24 +42,6 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.429);
   backdrop-filter: blur(20px);
   border-radius: 8px;
-}
-
-.circle {
-  width: 150px;
-  height: 150px;
-  background: radial-gradient(#013312, #02bc43);
-  border-radius: 50%;
-  position: absolute;
-  z-index: -1;
-}
-
-.circle:nth-child(1) {
-  top: 17rem;
-  left: 11rem;
-}
-.circle:nth-child(2) {
-  top: -2rem;
-  left: -3rem;
 }
 
 .textContainer {
