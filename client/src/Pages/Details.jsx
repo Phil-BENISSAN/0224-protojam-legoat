@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
-import RandoCard from "../Components/RandoCard";
 import data from "/src/data/data.json";
+import "../Styles/Details.css";
 
 function DetailsRandos() {
   const { id } = useParams();
-  const combinedData = Object.keys(data.Name).map((key) => ({
+  const soloData = Object.keys(data.Name).map((key) => ({
     name: data.Name[key],
     town: data.Town[key],
     type: data.Types[key],
@@ -18,13 +18,25 @@ function DetailsRandos() {
   }));
   return (
     <>
-      <h1>hello from {id}</h1>
-      <RandoCard
-        titleRando={data.titre}
-        difficultyRando={data.difficulty}
-        img={data.image}
-        distanceRando={data.distance}
-      />
+      <section className="detailsRando">
+        <img className="pictureDetails" src={soloData[id].image} alt="" />
+        <article className="articleDetails">
+          <h2 className="titleDetails">{soloData[id].titre}</h2>
+          <ul className="listDetails">
+            <li className="nameDetails">- Nom : {soloData[id].name}</li>
+            <li className="townDetails">- Ville : {soloData[id].town}</li>
+            <li className="departementDetails">
+              - Département : {soloData[id].departement}
+            </li>
+            <li className="difficultyDetails">- {soloData[id].difficulty}</li>
+            <li className="typeDetails">- Type : {soloData[id].type}</li>
+            <li className="distanceDetails">
+              - Distance : {soloData[id].distance}
+            </li>
+            <li className="timeDetails">-{soloData[id].time}</li>
+          </ul>
+        </article>
+      </section>
     </>
   );
 }
