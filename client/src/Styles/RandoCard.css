@@ -28,19 +28,21 @@
   background: white;
   padding: 0.4em;
   border-radius: 6px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  height: 15rem;
 }
 
 .card-image {
   background-color: rgb(236, 236, 236);
   width: 8rem;
-  height: 130px;
+  height: 4rem;
   border-radius: 6px 6px 0 0;
   align-self: center;
 }
 
 .randoPicture {
   border-radius: 0.3rem;
+  height: 6.5rem;
 }
 
 .category {
@@ -48,14 +50,20 @@
   font-size: 0.7em;
   font-weight: 600;
   color: var(--secondaryColor);
-  padding: 80px 7px 0;
+  padding: 50px 7px 0;
+}
+
+.distance {
+  font-size: 0.7em;
+  padding-left: 7px;
 }
 
 .heading {
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: rgb(88, 87, 87);
   padding: 7px;
+  margin-top: 0.3rem;
 }
 
 .author {
