@@ -1,10 +1,11 @@
-function RandoCard () {
-    return(
-        <>
-        <section className="cardRando">
-<img src="" alt="" />
-<p></p>
-        </section>
-        </>
-    )
+function RandoCard({desc}) {
+  return (
+    <>
+      <section className="cardRando">
+        <img src="/Img/apercuRando.png" alt="" />
+        <p>{desc}</p>
+      </section>
+    </>
+  );
 }
+export default RandoCard;
