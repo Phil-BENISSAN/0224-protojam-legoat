@@ -7,8 +7,11 @@ function HomePage() {
     <>
       <h2 className="lastRandoTitle">Ma dernière randonnée</h2>
       <LastRando />
+      <h2 className="lastRandoTitle">Randonées pour vous</h2>
       <section className="cardsRando">
-        <RandoCard desc="Une randonnée pure en pleine nature pour une déconnexion des écrans et une reconnexion à la nature." />
+        <RandoCard desc="Une randonnée pure en pleine nature pour une déconnexion des écrans et une reconnexion à la nature."
+        typeDesc="Montagne"
+        />
       </section>
     </>
   );

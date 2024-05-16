@@ -1,9 +1,16 @@
-function RandoCard({desc}) {
+import "../Styles/RandoCard.css";
+
+function RandoCard({ desc, typeDesc }) {
   return (
     <>
       <section className="cardRando">
-        <img src="/Img/apercuRando.png" alt="" />
-        <p>{desc}</p>
+        <img
+          className="randoDispoPicture"
+          src="/Img/daniel-angele-Joo3UBw789Q-unsplash.jpg"
+          alt=""
+        />
+        <p className="typeDesc">{typeDesc}</p>
+        <p className="desc">{desc}</p>
       </section>
     </>
   );

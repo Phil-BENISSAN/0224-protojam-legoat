@@ -1,19 +1,15 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .lastRandoTitle {
   text-align: center;
-  
+  font-family: poppins;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: var(--blackColor);
 }
 
 header {
   display: flex;
-  gap: 13rem;
+  justify-content: space-between;
   background-color: var(--primaryColor);
-  padding-bottom: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.382) 0 0.2rem 10px;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }

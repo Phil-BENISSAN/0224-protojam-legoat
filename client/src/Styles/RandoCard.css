@@ -1,0 +1,26 @@
+.cardRando {
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.randoDispoPicture {
+  width: 10rem;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.desc {
+  font-size: 0.7rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.typeDesc {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  color: var(--secondaryColor);
+}
