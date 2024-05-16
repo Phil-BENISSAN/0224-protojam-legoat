@@ -12,7 +12,6 @@ function HomePage() {
         <RandoCard desc="Une randonnée pure en pleine nature pour une déconnexion des écrans et une reconnexion à la nature."
         typeDesc="Montagne"
         />
-        <RandoCard desc="duejndusjnfd" typeDesc="dshbfsh"/>
       </section>
     </>
   );
