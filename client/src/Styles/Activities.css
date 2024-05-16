@@ -1,3 +1,10 @@
+.title-activities {
+    font-size: 1.2rem;
+    margin: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -33,6 +40,29 @@
   max-width: 600px; /* Ajustez cette valeur en fonction de vos besoins */
 }
 
-.swiper-pagination-bullet {
-    color: red;
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--primaryColor);
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--primaryColor);
+}
+
+.slide-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-content p {
+  position: absolute;
+  width: 100%;
+  bottom: 2rem;
+  left: 0rem;
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--whiteColor);
+  font-size: 1.2rem;
+  font-weight: 400;
 }
