@@ -7,7 +7,7 @@ from fastapi import FastAPI
 
 app = FastAPI(docs_url="/documentation")
 
-df_rando = pd.read_csv('app/RandoGironde.csv', sep=',')
+df_rando = pd.read_csv('app/Données.csv', sep=',')
 
 @app.get('/')
 def all() -> dict:
