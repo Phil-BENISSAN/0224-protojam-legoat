@@ -2,7 +2,7 @@ import uvicorn
 import pandas as pd
 from fastapi import FastAPI
 
-df_rando = pd.read_csv('rando.csv', sep=',')
+df_rando = pd.read_csv('app/rando.csv', sep=',')
 
 
 app = FastAPI(docs_url="/documentation")
