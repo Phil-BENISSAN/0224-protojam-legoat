@@ -9,7 +9,7 @@
 
 .card {
   width: 17rem;
-  height: 25rem;
+  height: 22rem;
   transition: all 0.2s;
   position: relative;
   cursor: pointer;
@@ -46,9 +46,9 @@
 
 .textContainer {
   position: absolute;
-  top: 17rem;
+  top: 13rem;
   z-index: 99;
-  left: 1rem;
+  left: 1.5rem;
   font-size: 0.8rem;
 }
 .dateRando {
