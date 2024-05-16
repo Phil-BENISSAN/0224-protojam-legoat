@@ -15,7 +15,7 @@ function LastRando() {
             src="/Img/magicpattern-blob-1715857025168.png"
             alt=""
           />
-          <img className="lastRandoPicture" src="/Img/apercuRando.png" alt="" />
+          <img className="lastRandoPicture" src="/Img/lastRandoPicture.png" alt="" />
           <div className="textContainer">
             <h3 className="dateRando">Randonnée du 16/05/2014</h3>
             <p>distance : 15km</p>

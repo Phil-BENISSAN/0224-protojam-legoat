@@ -6,7 +6,7 @@
 }
 
 .randoDispoPicture {
-  width: 10rem;
+  width: 9rem;
   margin-left: 0.2rem;
   margin-right: 0.2rem;
   margin-bottom: 0.5rem;
@@ -14,9 +14,7 @@
 
 .desc {
   font-size: 0.7rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  margin-top: 0.5rem;
+  margin: 0.5rem 1rem 1rem 0.5rem;
 }
 
 .typeDesc {
