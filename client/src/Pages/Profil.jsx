@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useUserAuth } from "../Context/UserAuthContext";
-import BtnAdrien from "../Components/BtnAdrien";
 
 function Profil() {
 	const { user } = useUserAuth();
