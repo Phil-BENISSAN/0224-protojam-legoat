@@ -1,14 +1,13 @@
-  .logo {
-    margin-top: -1rem;
-    margin-left: 1rem;
-    width: 3rem;
-    background-color: transparent;
-    margin-bottom: -1rem;
-  }
-  .profilPicture {
-    height: 2rem;
-    border-radius: 10rem;
-    margin-top: 0.6rem;
-    margin-bottom: 0.5rem;
-    margin-right: 1rem;
-  }
+.logo {
+  margin-left: 1rem;
+  width: 3rem;
+  background-color: transparent;
+  margin-bottom: -1rem;
+}
+.profilPicture {
+  height: 2rem;
+  border-radius: 10rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+}

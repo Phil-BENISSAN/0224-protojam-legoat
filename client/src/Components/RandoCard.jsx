@@ -3,15 +3,17 @@ import "../Styles/RandoCard.css";
 function RandoCard({ desc, typeDesc }) {
   return (
     <>
-      <section className="cardRando">
-        <img
-          className="randoDispoPicture"
-          src="/Img/daniel-angele-Joo3UBw789Q-unsplash.jpg"
-          alt=""
-        />
-        <p className="typeDesc">{typeDesc}</p>
-        <p className="desc">{desc}</p>
-      </section>
+      <div class="cardRando">
+        <div class="card-image">
+          <img
+            className="randoPicture"
+            src="/Img/daniel-angele-Joo3UBw789Q-unsplash.jpg"
+            alt=""
+          />
+        </div>
+        <div class="category">{typeDesc}</div>
+        <div class="heading">{desc}</div>
+      </div>
     </>
   );
 }
