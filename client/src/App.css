@@ -1,0 +1,11 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.Btn {
+	padding: 0.5rem 1.25rem;
+	border-radius: 0.55rem;
+	border: 1px solid red;
+}
