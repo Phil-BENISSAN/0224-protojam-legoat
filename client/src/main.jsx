@@ -26,7 +26,7 @@ const router = createBrowserRouter([
 				element: <NewsRandos />,
 			},
 			{
-				path: "/news-randos/:id",
+				path: "/randos/:id",
 				element: <DetailsRandos />,
 			},
 			{
