@@ -1,5 +1,5 @@
 function Btn() {
-	return <button className="Btn">Bazdijouton</button>;
+	return <button className="Btn">Bazdijdzijouton</button>;
 }
 
 export default Btn;
