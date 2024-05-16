@@ -1,0 +1,58 @@
+.lastRandoPicture {
+  width: 15rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  z-index: 99;
+  top: 1rem;
+  left: 1rem;
+}
+
+.card {
+  width: 17rem;
+  height: 25rem;
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer;
+}
+.parentImage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.blob {
+  position: absolute;
+  top: -4rem;
+  left: -4rem;
+  z-index: -1;
+}
+
+.blob2 {
+  position: absolute;
+  z-index: -1;
+  top: 13rem;
+  right: -1rem;
+}
+
+.card-inner {
+  width: inherit;
+  height: inherit;
+  background: rgba(255, 255, 255, 0.108);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.429);
+  backdrop-filter: blur(20px);
+  border-radius: 8px;
+}
+
+.textContainer {
+  position: absolute;
+  top: 17rem;
+  z-index: 99;
+  left: 1rem;
+  font-size: 0.8rem;
+}
+.dateRando {
+  font-size: 1rem;
+  color: var(--secondaryColor);
+  margin-bottom: 0.5rem;
+}

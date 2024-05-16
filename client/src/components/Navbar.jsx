@@ -6,7 +6,7 @@ const iconActivities = "/Img/icons8-confettis-90.png";
 
 function Navbar() {
   return (
-    <nav className="navbar">
+    <nav >
       <Link to="/">
         <img src={iconHome} alt="" className="icon-navbar" />
         <p>Accueil</p>
