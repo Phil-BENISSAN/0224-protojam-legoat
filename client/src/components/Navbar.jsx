@@ -1,8 +1,9 @@
+import iconHome from "../../public/Img/icons8-page-d’accueil-90"
+
 function Navbar() {
 	return (
 		<nav>
-			<p>Navbar</p>
-			<h3>Hello</h3>
+			<img src="../public" alt="" />
 		</nav>
 	);
 }
