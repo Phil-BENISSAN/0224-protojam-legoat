@@ -9,8 +9,21 @@ function HomePage() {
       <LastRando />
       <h2 className="lastRandoTitle">Randonées pour vous</h2>
       <section className="cardsRando">
-        <RandoCard desc="Une randonnée pure en pleine nature pour une déconnexion des écrans et une reconnexion à la nature."
-        typeDesc="Montagne"
+        <RandoCard
+          desc="Une randonnée pure en pleine nature pour une déconnexion des écrans et une reconnexion à la nature."
+          typeDesc="Montagne"
+        />
+        <RandoCard
+          desc="Une randonnée pure en pleine nature pour une déconnexion des écrans et une reconnexion à la nature."
+          typeDesc="Montagne"
+        />
+        <RandoCard
+          desc="Une randonnée pure en pleine nature pour une déconnexion des écrans et une reconnexion à la nature."
+          typeDesc="Montagne"
+        />
+        <RandoCard
+          desc="Une randonnée pure en pleine nature pour une déconnexion des écrans et une reconnexion à la nature."
+          typeDesc="Montagne"
         />
       </section>
     </>
