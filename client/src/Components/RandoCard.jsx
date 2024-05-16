@@ -1,18 +1,15 @@
 import "../Styles/RandoCard.css";
 
-function RandoCard({ desc, typeDesc }) {
+function RandoCard({ titleRando, difficultyRando, distanceRando, img }) {
   return (
     <>
-      <div class="cardRando">
-        <div class="card-image">
-          <img
-            className="randoPicture"
-            src="/Img/daniel-angele-Joo3UBw789Q-unsplash.jpg"
-            alt=""
-          />
+      <div className="cardRando">
+        <div className="card-image">
+          <img className="randoPicture" src={img} alt="" />
         </div>
-        <div class="category">{typeDesc}</div>
-        <div class="heading">{desc}</div>
+        <div className="category">{titleRando}</div>
+        <div className="heading">{difficultyRando}</div>
+        <div className="distance">Distance : {distanceRando}</div>
       </div>
     </>
   );

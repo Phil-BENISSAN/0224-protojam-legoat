@@ -4,7 +4,7 @@ function LastRando() {
   return (
     <>
       <section className="parentImage">
-        <div class="card">
+        <div className="card">
           <img
             className="blob"
             src="/Img/magicpattern-blob-1715857025168.png"
@@ -23,7 +23,7 @@ function LastRando() {
             <p>heure de départ : 10h22</p>
             <p>heure d'arrivée : 11h23</p>
           </div>
-          <div class="card-inner"></div>
+          <div className="card-inner"></div>
         </div>
       </section>
     </>
