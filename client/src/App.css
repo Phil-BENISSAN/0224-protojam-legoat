@@ -4,5 +4,8 @@
   --primaryColor: #01762a;
   --secondaryColor: #07d5b7;
   --whiteColor: #dfdfdf;
-  --blackColor: rgb(18, 18, 18);
+  --blackColor: #121212;
+
+  --font-title: "Quicksand", Verdana, sans-serif;
+  --font-content: "Poppins", Verdana, sans-serif;
 }
