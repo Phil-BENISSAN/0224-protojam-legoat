@@ -1,12 +1,39 @@
+import { Link } from "react-router-dom";
+import RandoCard from "../Components/RandoCard";
+import data from "/src/data/data.json";
+
 function NewsRandos() {
-	return (
-		<section className="bg-red-200 p-4 grid grid-cols-2">
-			<section>1</section>
-			<section>2</section>
-			<section>3</section>
-			<section>4</section>
-		</section>
-	);
+  const combinedData = Object.keys(data.Name).map((key) => ({
+    name: data.Name[key],
+    town: data.Town[key],
+    type: data.Types[key],
+    distance: data.Distance[key],
+    time: data.Time[key],
+    difficulty: data.Difficulty[key],
+    image: data.Image[key],
+    titre: data.Titre[key],
+    prix: data.Prix[key],
+    departement: data.Departement[key],
+  }));
+  return (
+    <>
+        <h2 className="lastRandoTitle">Trouvez votre randonnée</h2>
+        <section className="allCardsRando">
+          {combinedData.map((item, index) => (
+			      <Link to={`/randos/${index}`}>
+            <section key={index} className="cardsRando">
+              <RandoCard
+                titleRando={item.titre}
+                difficultyRando={item.difficulty}
+                img={item.image}
+                distanceRando={item.distance}
+              />
+            </section>
+			</Link>
+          ))}
+        </section>
+    </>
+  );
 }
 
 export default NewsRandos;

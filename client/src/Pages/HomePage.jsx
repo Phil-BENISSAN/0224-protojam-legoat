@@ -24,15 +24,17 @@ function HomePage() {
       <LastRando />
       <h2 className="lastRandoTitle">Randonées pour vous</h2>
       <section className="allCardsRando">
-        {combinedData.slice(0 - 20).map((item, index) => (
-          <section key={index} className="cardsRando">
-            <RandoCard
-              titleRando={item.titre}
-              difficultyRando={item.difficulty}
-              img={item.image}
-              distanceRando={item.distance}
-            />
-          </section>
+        {combinedData.slice(0, 20).map((item, index) => (
+          <Link to={`/randos/${index}`}>
+            <section key={index} className="cardsRando">
+              <RandoCard
+                titleRando={item.titre}
+                difficultyRando={item.difficulty}
+                img={item.image}
+                distanceRando={item.distance}
+              />
+            </section>
+          </Link>
         ))}
         <Link to="/news-randos" className="link">
           <button class="button">
