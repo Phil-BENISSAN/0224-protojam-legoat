@@ -1,4 +1,4 @@
-uuid,depart ,arrivée,type_itinéraire,difficulte,type_sol,longueur,largeur,altitude_min,altitude_max,etat_itineraire
+huuid,depart ,arrivée,type_itinéraire,difficulte,type_sol,longueur,largeur,altitude_min,altitude_max,etat_itineraire
 2f6b7cfc-e302-49d2-8135-dcfddf26f173,"6.353486608102956,45.12166512481137","6.384971672787728,45.121389878464576",Sentier,,Cailloux + terre,3021.87,"0,4 m",,,Bon
 907cfe35-7354-4d5b-99d9-2e92bfc93e1d,"6.400056711017181,45.119651344179545","6.388940896866119,45.1206128701586",Sentier,,Cailloux + terre,898.28,"0,4 m",,,Bon
 d3a9b9c7-12a2-4f0d-8690-86c274e57bc0,"6.388940896866119,45.1206128701586","6.384971672756636,45.12138987750839",Sentier,,Cailloux + terre,331.1,"0,4 m",,,Bon
