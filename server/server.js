@@ -1,37 +1,37 @@
-require("dotenv").config();
 const express = require("express");
-let cors = require("cors");
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+const bodyParser = require("body-parser");
+const multer = require("multer");
+const fs = require("fs");
+const path = require("path");
 
 const app = express();
-app.use(cors());
-app.use(express.static("public"));
-app.use(express.json());
+const port = process.env.PORT || 3000;
 
-app.post("/checkout", async (req, res) => {
-	console.log(req.body);
-	const items = req.body.items;
+// Middleware pour analyser les données JSON dans les requêtes
+app.use(bodyParser.json());
 
-	let lineItems = [];
-	items.forEach((item) => {
-		lineItems.push({
-			price: item.id,
-			quantity: item.quantity,
-		});
-	});
-
-	const session = await stripe.checkout.sessions.create({
-		line_items: lineItems,
-		mode: "payment",
-		success_url: "http://localhost:5173/success",
-		cancel_url: "http://localhost:5173/cancel",
-	});
-
-	res.send(
-		JSON.stringify({
-			url: session.url,
-		})
-	);
+// Configuration de multer pour gérer les téléchargements de fichiers
+const storage = multer.diskStorage({
+	destination: function (req, file, cb) {
+		const uploadDir = path.join(__dirname, "uploads");
+		if (!fs.existsSync(uploadDir)) {
+			fs.mkdirSync(uploadDir, { recursive: true });
+		}
+		cb(null, uploadDir);
+	},
+	filename: function (req, file, cb) {
+		cb(null, `${Date.now()}-${file.originalname}`);
+	},
 });
 
-app.listen(4000, () => console.log("Listening on port 4000"));
+const upload = multer({ storage: storage });
+
+// Route pour gérer les téléchargements d'images
+app.post("/upload", upload.single("image"), (req, res) => {
+	res.json({ filePath: `/uploads/${req.file.filename}` });
+});
+
+// Démarrage du serveur
+app.listen(port, () => {
+	console.log(`Server is running on port ${port}`);
+});
