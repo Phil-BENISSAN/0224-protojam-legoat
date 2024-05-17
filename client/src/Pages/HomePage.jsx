@@ -23,6 +23,7 @@ function HomePage() {
 
   return (
     <>
+    <section className={isVisible}>
     <img className={`fondGreen ${isFondVisible}`} src="/Img/fondLoader.jpeg" alt="" />
       <section className={isVisible}>
         <img className={`pictureLoader ${isLogoVisible}`} src="/Img/loaderRando.svg" alt="" />
@@ -137,6 +138,7 @@ function HomePage() {
             </div>
           </div>
         </div>
+      </section>
       </section>
       <h2 className="lastRandoTitle">Ma dernière randonnée</h2>
       <LastRando />
