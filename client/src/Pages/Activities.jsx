@@ -10,7 +10,7 @@ import activities from "../data/activities.json";
 function Activities() {
   return (
     <>
-      <h1 className="title-activities">Quelle activité vous intéresse ?</h1>
+      <h1 className="title-activities">En manque d&apos;inspiration pour votre randonnée ? Sélectionnez une activité :</h1>
       <section className="swiper-container">
         <Swiper
           spaceBetween={30}
