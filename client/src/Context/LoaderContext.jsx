@@ -4,25 +4,29 @@ const IntroContext = createContext();
 
 export function IntroProvider({ children }) {
   const [isVisible, setIsVisible] = useState("visibleIntro");
-  const [isLogoVisible, setIsLogoVisible] = useState("LogoVisible");
-const [isLoaderVisible, setIsLoaderVisible] = useState("LoaderVisible");
+  const [isLogoVisible, setIsLogoVisible] = useState("logoVisible");
+const [isLoaderVisible, setIsLoaderVisible] = useState("loaderVisible");
+const [isFondVisible, setIsFondVisible] = useState("fondVisible")
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible("notVisibleIntro");
-    }, 7000);
+    }, 8000);
     setTimeout(() => {
         setIsLogoVisible("notVisibleLogo");
-    }, 4000);
+    }, 6000);
     setTimeout(() => {
         setIsLoaderVisible("notVisibleLoader");
-    }, 6000);
+    }, 5000);
+    setTimeout(() => {
+      setIsFondVisible("notVisibleFond");
+  }, 7000);
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <IntroContext.Provider value={{ isVisible, setIsVisible, isLogoVisible, setIsLogoVisible, isLoaderVisible, setIsLoaderVisible }}>
+    <IntroContext.Provider value={{ isVisible, setIsVisible, isLogoVisible, setIsLogoVisible, isLoaderVisible, setIsLoaderVisible, isFondVisible, setIsFondVisible }}>
       {children}
     </IntroContext.Provider>
   );

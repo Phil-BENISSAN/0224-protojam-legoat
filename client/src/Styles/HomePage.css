@@ -60,8 +60,7 @@ header {
 }
 
 .notVisibleIntro {
-  opacity: 0;
-  transition: all 0.3s ease-out;
+  display: none;
 }
 
 .loaderContainer {
@@ -75,6 +74,16 @@ header {
 }
 
 .notVisibleLoader {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.fondGreen {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.notVisibleFond {
   opacity: 0;
   transition: all 0.3s ease-out;
 }

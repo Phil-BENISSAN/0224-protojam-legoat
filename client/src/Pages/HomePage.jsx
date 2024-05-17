@@ -19,11 +19,11 @@ function HomePage() {
     departement: data.Departement[key],
   }));
 
-  const { isVisible, isLogoVisible, isLoaderVisible } = useIntro();
+  const { isVisible, isLogoVisible, isLoaderVisible, isFondVisible } = useIntro();
 
   return (
     <>
-    <section className="loaderContainer">
+    <img className={`fondGreen ${isFondVisible}`} src="/Img/fondLoader.jpeg" alt="" />
       <section className={isVisible}>
         <img className={`pictureLoader ${isLogoVisible}`} src="/Img/loaderRando.svg" alt="" />
         <div class={`scene ${isLoaderVisible}`}>
@@ -137,7 +137,6 @@ function HomePage() {
             </div>
           </div>
         </div>
-      </section>
       </section>
       <h2 className="lastRandoTitle">Ma dernière randonnée</h2>
       <LastRando />
