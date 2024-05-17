@@ -25,8 +25,8 @@ function NewsRandos() {
 			<h2 className="lastRandoTitle">Trouvez votre randonnée</h2>
 			<section className="allCardsRando">
 				{combinedData.map((item, index) => (
-					<Link to={`/randos/${index}`}>
-						<section key={index} className="cardsRando">
+					<Link to={`/randos/${index}`} key={index}>
+						<section className="cardsRando">
 							<RandoCard
 								titleRando={item.titre}
 								difficultyRando={item.difficulty}
