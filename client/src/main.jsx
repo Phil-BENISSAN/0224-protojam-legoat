@@ -14,6 +14,7 @@ import Profil from "./Pages/Profil.jsx";
 import Success from "./Pages/Success.jsx";
 import Cancel from "./Pages/Cancel.jsx";
 import WebPicture from "./Pages/WebPicture.jsx";
+import Memories from "./Pages/Memories.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
 			{
 				path: "/picture",
 				element: <WebPicture />,
+			},
+			{
+				path: "/memories",
+				element: <Memories />,
 			},
 		],
 	},
