@@ -4,73 +4,95 @@
     "alt": "Goat",
     "link": "/activities/goat",
     "text": "Course de chèvre",
-    "youtubeID": "Sb3YnpYMfoU"
+    "youtubeID": "Sb3YnpYMfoU",
+    "id": "0"
   },
   {
     "src": "Img/activity-chamane.jpg",
     "alt": "Chamane",
     "link": "/activities/chamane",
     "text": "Séance de chamanisme",
-    "youtubeID": "Z0isxBxyl2E"
+    "youtubeID": "Z0isxBxyl2E",
+    "id": "1"
   },
   {
     "src": "Img/activity-turtle.jpg",
     "alt": "Turtle",
     "link": "/activities/turtle",
-    "text": "Natation avec des tortues"
+    "text": "Natation avec des tortues",
+    "youtubeID": "vAticypJw4Y",
+    "id": "2"
   },
   {
     "src": "Img/activity-asmr.jpg",
     "alt": "ASMR",
     "link": "/activities/asmr",
-    "text": "Vidéo ASMR pour se détendre"
+    "text": "Vidéo ASMR pour se détendre",
+    "youtubeID": "puIF7kUvfAY",
+    "id": "3"
   },
   {
     "src": "Img/activity-eat.jpg",
     "alt": "Eat",
     "link": "/activities/eat",
-    "text": "Pique-nique dans les champs"
+    "text": "Pique-nique dans les champs",
+    "youtubeID": "Dx28qkx4Ho4",
+    "id": "4"
   },
   {
     "src": "Img/activity-meditation.jpg",
     "alt": "Meditation",
     "link": "/activities/meditation",
-    "text": "Podcast de méditation"
+    "text": "Podcast de méditation",
+    "youtubeID": "PTsk8VHCZjM",
+    "id": "5"
   },
   {
     "src": "Img/activity-pipeau.jpg",
     "alt": "Pipeau",
     "link": "/activities/pipeau",
-    "text": "Initiation au pipeau"
+    "text": "Initiation au pipeau",
+    "youtubeID": "qKSmp9HqPdA",
+    "id": "6"
   },
   {
     "src": "Img/activity-reading.jpg",
     "alt": "Reading",
     "link": "/activities/reading",
-    "text": "Recommandation de lecture"
+    "text": "Recommandation de lecture",
+    "youtubeID": "wt4MtHGPPxk",
+    "id": "7"
   },
   {
     "src": "Img/activity-song-oasis.jpg",
     "alt": "Song",
     "link": "/activities/campfire",
-    "text": "Musique à écouter autour d'un feu de camp"
+    "text": "Musique à écouter autour d'un feu de camp",
+    "youtubeID": "DERRZE7wfWQ",
+    "id": "8"
   },
   {
     "src": "Img/activity-work.jpg",
     "alt": "Work",
     "link": "/activities/work",
-    "text": "Entretien d'embauche relaxant"
+    "text": "Entretien d'embauche relaxant",
+    "youtubeID": "lRzjBCT7K3s",
+    "id": "9"
   },
   {
     "src": "Img/activity-yoga.jpg",
     "alt": "Yoga",
     "link": "/activities/yoga",
-    "text": "Apprendre les postures de Yoga"
+    "text": "Apprendre les postures de Yoga",
+    "youtubeID": "RfL3pQkyTIA",
+    "id": "10"
   },
   {
     "src": "Img/activity-neighbor.jpg",
     "alt": "Neighbor",
     "link": "/activities/adopt",
-    "text": "Adopte un randonneur"
+    "text": "Adopte un randonneur",
+    "youtubeID": "6qjOdk005U4",
+    "id": "11"
   }
 ]

@@ -28,7 +28,7 @@ function Activities() {
         >
           {activities.map((activity, index) => (
             <SwiperSlide key={index}>
-              <Link to={activity.link}>
+              <Link to={activity.id}>
                 <article className="slide-content">
                   <img
                     src={activity.src}
