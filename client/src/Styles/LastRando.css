@@ -23,16 +23,18 @@
 
 .blob {
   position: absolute;
-  top: -4rem;
-  left: -4rem;
+  top: 5rem;
+  left: -3rem;
   z-index: -1;
+  width: 14rem;
 }
 
 .blob2 {
   position: absolute;
   z-index: -1;
-  top: 13rem;
-  right: -1rem;
+  top: 20rem;
+  right: 0;
+  width: 15rem;
 }
 
 .card-inner {

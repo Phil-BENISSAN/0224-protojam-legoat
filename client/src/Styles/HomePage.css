@@ -4,7 +4,7 @@
   font-weight: 400;
   font-size: 1.3rem;
   margin-bottom: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   color: var(--blackColor);
 }
 
@@ -66,6 +66,15 @@ header {
 .loaderContainer {
   background-color: var(--primaryColor);
   background-size: 100%;
+}
+
+.allLastRando {
+  display: flex;
+  overflow-x: scroll;
+  gap: 2rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .notVisibleLogo {
