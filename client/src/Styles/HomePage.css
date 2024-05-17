@@ -71,6 +71,7 @@ header {
 .allLastRando {
   display: flex;
   overflow-x: scroll;
+  scrollbar-width: none;
   gap: 2rem;
   padding-top: 1rem;
   padding-left: 1rem;
