@@ -11,6 +11,8 @@ import SignIn from "./Pages/SignIn.jsx";
 import SignUp from "./Pages/SignUp.jsx";
 import NotFoundPage from "./Pages/NotFoundPage.jsx";
 import Profil from "./Pages/Profil.jsx";
+import Success from "./Pages/Success.jsx";
+import Cancel from "./Pages/Cancel.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -48,6 +50,14 @@ const router = createBrowserRouter([
 			{
 				path: "/profil",
 				element: <Profil />,
+			},
+			{
+				path: "/success",
+				element: <Success />,
+			},
+			{
+				path: "/cancel",
+				element: <Cancel />,
 			},
 		],
 	},

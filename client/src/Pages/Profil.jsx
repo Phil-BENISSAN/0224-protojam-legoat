@@ -14,12 +14,12 @@ function Profil() {
 			<div className="flex flex-col gap-24">
 				<Link
 					to="/signin"
-					className="px-8 py-4 rounded-xl text-center bg-[#01762a] text-white">
+					className="px-8 py-4 rounded-xl text-center bg-[#01762a] text-white active:opacity-75">
 					Se connecter
 				</Link>
 				<Link
 					to="/signup"
-					className="px-8 py-4 rounded-xl text-center bg-[#01762a] text-white">
+					className="px-8 py-4 rounded-xl text-center bg-[#01762a] text-white active:opacity-75">
 					Se créer un compte
 				</Link>
 				{user ? (
@@ -28,7 +28,7 @@ function Profil() {
 						<p>Email : {user.email}</p>
 						<button
 							onClick={handleLogout}
-							className="px-9 py-4 mt-4 rounded-xl text-center bg-[#01762a] text-white">
+							className="px-9 py-4 mt-4 rounded-xl text-center bg-[#01762a] text-white active:opacity-75">
 							Se déconnecter
 						</button>
 					</div>
