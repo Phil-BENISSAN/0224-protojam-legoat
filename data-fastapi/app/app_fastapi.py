@@ -7,14 +7,13 @@ from fastapi import FastAPI
 
 app = FastAPI(docs_url="/documentation")
 
-df_rando = pd.read_csv('app/Données.csv', sep=',')
 
 @app.get('/')
 def all() -> dict:
     """
     Affiche toutes les données
     """
-
+    df_rando = pd.read_csv('app/Données.csv', sep=',')
     all = {}
     for index in range(0,len(df_rando)):
         
@@ -29,6 +28,7 @@ def all() -> dict:
 
 @app.get('/select={columns}')
 def select(columns:str) -> dict:
+    #df_rando = pd.read_csv('app/Données.csv', sep=',')
     """
     Affiche la liste des données pour toutes les randonnées
     pour appeler plusieurs données elles doivent être séparées par %
@@ -53,6 +53,7 @@ def select(columns:str) -> dict:
 @app.get('/api/select={columns}/where={column2}=={condition}')
 
 def fonction(columns:str, column2:str, condition:str) -> dict:
+    #df_rando = pd.read_csv('app/Données.csv', sep=',')
     """
     Affiche une donnée selon une condition sur une autre donnée
     Exemples:
