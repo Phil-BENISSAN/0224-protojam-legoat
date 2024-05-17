@@ -13,6 +13,7 @@ import NotFoundPage from "./Pages/NotFoundPage.jsx";
 import Profil from "./Pages/Profil.jsx";
 import Success from "./Pages/Success.jsx";
 import Cancel from "./Pages/Cancel.jsx";
+import WebPicture from "./Pages/WebPicture.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
 			{
 				path: "/cancel",
 				element: <Cancel />,
+			},
+			{
+				path: "/picture",
+				element: <WebPicture />,
 			},
 		],
 	},
