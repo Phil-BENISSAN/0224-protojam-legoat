@@ -3,8 +3,8 @@ import "../Styles/Success.css";
 
 function Success() {
   return (
-    <>
-      <img
+    <>     
+	<img
         className="blob3"
         src="/Img/magicpattern-blob-1715857025168.png"
         alt=""
@@ -27,7 +27,7 @@ aspect-square w-8 flex justify-center items-center text-yellow-700 w-14"
           Merci pour votre don plein d'amour ❤️, maintenant posez votre tel et
           allez découvrir le monde !!! 🌏
         </p>
-        <Link to="/" className="linkSuccess">Terminer</Link>
+        <Link to="/" className="linkSuccess">Découvrir</Link>
       </section>
     </>
   );
