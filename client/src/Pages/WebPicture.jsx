@@ -11,11 +11,24 @@ const WebPicture = () => {
 	}, [webcamRef, setImgSrc]);
 
 	return (
-		<>
-			<Webcam audio={false} ref={webcamRef} screenshotFormat="image/jpeg" />
-			<button onClick={capture}>Capture photo</button>
-			{imgSrc && <img src={imgSrc} />}
-		</>
+		<section className="-translate-y-10">
+			<Webcam
+				audio={false}
+				ref={webcamRef}
+				screenshotFormat="image/jpeg"
+				className="p-10"
+			/>
+			<div className="flex justify-center items-center -translate-y-3">
+				<button
+					onClick={capture}
+					className="py-2.5 px-3.5 bg-green-700 rounded-lg text-white active:opacity-85">
+					Capturer l'instant
+				</button>
+			</div>
+			<div className="p-10 -translate-y-6">
+				{imgSrc && <img src={imgSrc} />}
+			</div>
+		</section>
 	);
 };
 
