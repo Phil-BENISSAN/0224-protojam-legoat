@@ -1,0 +1,76 @@
+[
+  {
+    "src": "Img/activity-goat.jpg",
+    "alt": "Goat",
+    "link": "/activities/goat",
+    "text": "Course de chèvre",
+    "youtubeID": "Sb3YnpYMfoU"
+  },
+  {
+    "src": "Img/activity-chamane.jpg",
+    "alt": "Chamane",
+    "link": "/activities/chamane",
+    "text": "Séance de chamanisme",
+    "youtubeID": "Z0isxBxyl2E"
+  },
+  {
+    "src": "Img/activity-turtle.jpg",
+    "alt": "Turtle",
+    "link": "/activities/turtle",
+    "text": "Natation avec des tortues"
+  },
+  {
+    "src": "Img/activity-asmr.jpg",
+    "alt": "ASMR",
+    "link": "/activities/asmr",
+    "text": "Vidéo ASMR pour se détendre"
+  },
+  {
+    "src": "Img/activity-eat.jpg",
+    "alt": "Eat",
+    "link": "/activities/eat",
+    "text": "Pique-nique dans les champs"
+  },
+  {
+    "src": "Img/activity-meditation.jpg",
+    "alt": "Meditation",
+    "link": "/activities/meditation",
+    "text": "Podcast de méditation"
+  },
+  {
+    "src": "Img/activity-pipeau.jpg",
+    "alt": "Pipeau",
+    "link": "/activities/pipeau",
+    "text": "Initiation au pipeau"
+  },
+  {
+    "src": "Img/activity-reading.jpg",
+    "alt": "Reading",
+    "link": "/activities/reading",
+    "text": "Recommandation de lecture"
+  },
+  {
+    "src": "Img/activity-song-oasis.jpg",
+    "alt": "Song",
+    "link": "/activities/campfire",
+    "text": "Musique à écouter autour d'un feu de camp"
+  },
+  {
+    "src": "Img/activity-work.jpg",
+    "alt": "Work",
+    "link": "/activities/work",
+    "text": "Entretien d'embauche relaxant"
+  },
+  {
+    "src": "Img/activity-yoga.jpg",
+    "alt": "Yoga",
+    "link": "/activities/yoga",
+    "text": "Apprendre les postures de Yoga"
+  },
+  {
+    "src": "Img/activity-neighbor.jpg",
+    "alt": "Neighbor",
+    "link": "/activities/adopt",
+    "text": "Adopte un randonneur"
+  }
+]
