@@ -10,6 +10,10 @@ import DetailsActivities from "./Pages/DetailsActivities.jsx";
 import SignIn from "./Pages/SignIn.jsx";
 import SignUp from "./Pages/SignUp.jsx";
 import NotFoundPage from "./Pages/NotFoundPage.jsx";
+import Profil from "./Pages/Profil.jsx";
+import Success from "./Pages/Success.jsx";
+import Cancel from "./Pages/Cancel.jsx";
+import WebPicture from "./Pages/WebPicture.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -25,7 +29,7 @@ const router = createBrowserRouter([
 				element: <NewsRandos />,
 			},
 			{
-				path: "/news-randos/:id",
+				path: "/randos/:id",
 				element: <DetailsRandos />,
 			},
 			{
@@ -43,6 +47,22 @@ const router = createBrowserRouter([
 			{
 				path: "/signup",
 				element: <SignUp />,
+			},
+			{
+				path: "/profil",
+				element: <Profil />,
+			},
+			{
+				path: "/success",
+				element: <Success />,
+			},
+			{
+				path: "/cancel",
+				element: <Cancel />,
+			},
+			{
+				path: "/picture",
+				element: <WebPicture />,
 			},
 		],
 	},
