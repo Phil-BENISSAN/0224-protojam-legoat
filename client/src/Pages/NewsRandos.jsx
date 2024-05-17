@@ -53,9 +53,9 @@ function NewsRandos() {
       }
 
       if (selectedDuration === "one-hour") {
-        matchesDuration = duration < 1;
+        matchesDuration = duration <= 1;
       } else if (selectedDuration === "three-hour") {
-        matchesDuration = duration >= 1 && duration <= 3;
+        matchesDuration = duration > 1 && duration <= 3;
       } else if (selectedDuration === "four-hour") {
         matchesDuration = duration > 3;
       }
