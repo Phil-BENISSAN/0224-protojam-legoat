@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import RandoCard from "../Components/RandoCard";
 import data from "/src/data/data.json";
 import { useEffect, useState } from "react";
+import "../Styles/Filter.css"
 
 function NewsRandos() {
   useEffect(() => {
@@ -79,6 +80,7 @@ function NewsRandos() {
   return (
     <>
       <h2 className="lastRandoTitle">Trouvez votre randonnée</h2>
+      <section className="allFilters">
       <label>
         <select
           value={selectedDistance}
@@ -116,6 +118,7 @@ function NewsRandos() {
         </select>
       </label>
       <hr />
+      </section>
       <section className="allCardsRando">
         {filteredHikes.map((item, index) => (
           <Link to={`/randos/${index}`} key={index}>
