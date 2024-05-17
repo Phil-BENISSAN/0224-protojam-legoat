@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useImageContext } from "../Context/ImageContext";
 
 function Gallery() {
@@ -16,15 +16,23 @@ function Gallery() {
 	return (
 		<div>
 			<div className="flex flex-wrap gap-4 mt-4">
-				{images.map((image, index) => (
-					<img
-						key={index}
-						src={image}
-						alt={`Capture ${index}`}
-						className="w-32 h-32 object-cover cursor-pointer"
-						onClick={() => handleImageClick(image)}
-					/>
-				))}
+				{images.length > 0 ? (
+					images.map((image, index) => (
+						<img
+							key={index}
+							src={image}
+							alt={`Capture ${index}`}
+							className="w-32 h-32 object-cover cursor-pointer"
+							onClick={() => handleImageClick(image)}
+						/>
+					))
+				) : (
+					<div className="flex justify-center w-full">
+						<p className="text-center text-gray-500 text-xl p-2 ">
+							Pas encore de souvenirs ensemble
+						</p>
+					</div>
+				)}
 			</div>
 
 			{selectedImage && (
